@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 DIR="$(dirname "$(readlink -f "$0")")"
 cd "$DIR"
+git reset --hard
 git pull origin master
 if [ "$(readlink -f "$HOME/.minecraft")" != "$DIR" ]; then
 	mv "$HOME/.minecraft"/{saves,lastlogin,stats,options.txt} .
@@ -10,6 +11,7 @@ fi
 if [ ! -d "config" ]; then
 	cp -a config.git config
 fi
+rm -rf bin/natives
 UNAME="$(uname)"
 if [ "$UNAME" = "Linux" ]; then
 	cp -a bin/natives natives/linux
