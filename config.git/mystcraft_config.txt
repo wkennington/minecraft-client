@@ -37,22 +37,14 @@ general {
     B:options.crafting.binder.enabled=true
     B:options.crafting.bookstand.enabled=true
     B:options.crafting.desk.enabled=true
-    B:options.crafting.enableAgebook=false
-    B:options.crafting.enableBookstand=true
-    B:options.crafting.enableDesk=false
-    B:options.crafting.enableLectern=true
-    B:options.crafting.enableLinkModifier=true
-    B:options.crafting.enableLinkbook=true
-    B:options.crafting.enableNotebook=false
-    B:options.crafting.enableReceptacle=true
     B:options.crafting.lectern.enabled=true
     B:options.crafting.linkbook.enabled=true
     B:options.crafting.notebook.enabled=true
     B:options.crafting.receptacle.enabled=true
     S:options.difficultyoverride=
-    B:options.instability=false
+    B:options.instability=true
     I:options.providerId=9
-    B:options.renderlabels=true
+    B:options.renderlabels=false
     I:villager.archivist.id=1210950779
 }
 
@@ -89,13 +81,13 @@ instability {
 ####################
 
 item {
-    I:item.agebook.id=1030
-    I:item.linkbook.id=1031
+    I:item.agebook.id=8700
+    I:item.linkbook.id=8701
     I:item.liquid.id=8705
-    I:item.notebook.id=1032
+    I:item.notebook.id=8702
     I:item.page.id=8704
     I:item.vial.id=8706
-    I:item.writingdesk.id=1033
+    I:item.writingdesk.id=8703
 }
 
 
@@ -115,16 +107,8 @@ symbol {
     B:bioconsmall.enabled=true
     B:biocontiled.enabled=true
     B:biocontiny.enabled=true
-    B:biomecontrollernative.enabled=true
     B:birch_forest.enabled=true
     B:caves.enabled=true
-    B:checkerboard_biomes.enabled=true
-    B:cloudblack.enabled=true
-    B:cloudblue.enabled=true
-    B:cloudchromatic.enabled=true
-    B:cloudgreen.enabled=true
-    B:cloudred.enabled=true
-    B:cloudwhite.enabled=true
     B:colorcloud.enabled=true
     B:colorfog.enabled=true
     B:colorhorizon.enabled=true
@@ -132,12 +116,10 @@ symbol {
     B:colorskynight.enabled=true
     B:cryformcry.enabled=true
     B:cryformglow.enabled=true
-    B:day.enabled=true
     B:denseores.enabled=true
     B:desert.enabled=true
     B:deserthills.enabled=true
     B:dungeons.enabled=true
-    B:dusk.enabled=true
     B:envaccel.enabled=true
     B:envexplosions.enabled=true
     B:envlightning.enabled=true
@@ -147,25 +129,16 @@ symbol {
     B:extreme_hills_edge.enabled=true
     B:extreme_jungle.enabled=true
     B:flat.enabled=true
-    B:fogblack.enabled=true
-    B:fogblue.enabled=true
-    B:fogchromatic.enabled=true
-    B:foggreen.enabled=true
-    B:fognormal.enabled=true
-    B:fogred.enabled=true
-    B:fogwhite.enabled=true
     B:forest.enabled=true
     B:forested_hills.enabled=true
     B:forested_island.enabled=true
     B:foresthills.enabled=true
     B:frozenocean.enabled=true
     B:frozenriver.enabled=true
-    B:ftime.enabled=true
     B:glacier.enabled=true
     B:green_hills.enabled=true
     B:green_swamplands.enabled=true
     B:hell.enabled=true
-    B:huge_trees.enabled=true
     B:hugetrees.enabled=true
     B:ice_mountains.enabled=true
     B:ice_plains.enabled=true
@@ -173,7 +146,6 @@ symbol {
     B:jungle.enabled=true
     B:junglehills.enabled=true
     B:lakes.enabled=true
-    B:lava_lakes.enabled=true
     B:lavalakes.enabled=true
     B:lightingbright.enabled=true
     B:lightingdark.enabled=true
@@ -229,15 +201,12 @@ symbol {
     B:mushroomisland.enabled=true
     B:mushroomislandshore.enabled=true
     B:netherfort.enabled=true
-    B:night.enabled=true
     B:nohorizon.enabled=true
     B:nosea.enabled=true
-    B:ntime.enabled=true
     B:obelisks.enabled=true
     B:ocean.enabled=true
     B:pine_forest.enabled=true
     B:plains.enabled=true
-    B:rain.enabled=true
     B:rainbow.enabled=true
     B:rainforest.enabled=true
     B:ravines.enabled=true
@@ -245,37 +214,17 @@ symbol {
     B:river.enabled=true
     B:savanna.enabled=true
     B:shrubland.enabled=true
-    B:single_biome.enabled=true
     B:sky.enabled=true
-    B:skyblack.enabled=true
-    B:skyblue.enabled=true
-    B:skychromatic.enabled=true
-    B:skygreen.enabled=true
     B:skylands.enabled=true
-    B:skynormal.enabled=true
-    B:skyred.enabled=true
-    B:skywhite.enabled=true
-    B:snow.enabled=true
     B:snow_forest.enabled=true
     B:snowy_rainforest.enabled=true
-    B:standard_lighting.enabled=true
-    B:standard_terrain.enabled=true
-    B:star_fissure.enabled=true
     B:starfissure.enabled=true
     B:starsdark.enabled=true
     B:starsendsky.enabled=true
     B:starsnormal.enabled=true
-    B:stime.enabled=true
-    B:storm.enabled=true
     B:strongholds.enabled=true
     B:sundark.enabled=true
     B:sunnormal.enabled=true
-    B:sunsetblack.enabled=true
-    B:sunsetblue.enabled=true
-    B:sunsetchromatic.enabled=true
-    B:sunsetgreen.enabled=true
-    B:sunsetred.enabled=true
-    B:sunsetwhite.enabled=true
     B:swampland.enabled=true
     B:taiga.enabled=true
     B:taigahills.enabled=true
@@ -297,8 +246,6 @@ symbol {
     B:weatherslow.enabled=true
     B:weathersnow.enabled=true
     B:weatherstorm.enabled=true
-    B:weathersun.enabled=true
-    B:woodcaves.enabled=true
     B:woodlands.enabled=true
 }
 
