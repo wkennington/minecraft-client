@@ -1,3 +1,4 @@
+xcopy %~dp0\config.git %~dp0\config /E
 move %APPDATA%\.minecraft\saves %~dp0
 move %APPDATA%\.minecraft\stats %~dp0
 move %APPDATA%\.minecraft\lastlogin %~dp0
