@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+DIR="$(cd "$(dirname "$0")"; pwd)"
+cd "$DIR"
+git reset --hard
+git pull origin master
+if [ ! -d "config" ]; then
+	cp -a config.git config
+fi
+rm -rf bin/natives
+UNAME="$(uname)"
+if [ "$UNAME" = "Linux" ]; then
+	cp -a natives/linux bin/natives
+	MDIR="$HOME/.minecraft"
+elif [ "$UNAME" = "Darwin" ]; then
+	cp -a natives/macosx bin/natives
+	MDIR="$HOME/Library/Application Support/minecraft"
+fi
+if [ "$(readlink "$MDIR")" != "$DIR" ]; then
+	mv "$MDIR"/{saves,lastlogin,stats,options.txt} . >/dev/null 2>&1
+	rm -rf "$MDIR"
+	ln -s "$DIR" "$MDIR"
+fi
+java -Xmx2048M -Xms512M -cp minecraft.jar net.minecraft.LauncherFrame
