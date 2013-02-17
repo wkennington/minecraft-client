@@ -6,3 +6,4 @@ move %APPDATA%\.minecraft\lastlogin %~dp0
 move %APPDATA%\.minecraft\options.txt %~dp0
 rmdir /s /q %APPDATA%\.minecraft
 mklink /D %APPDATA%\.minecraft %~dp0
+pause
